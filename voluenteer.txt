@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Volunteer Registration | Kv Foundation</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Existing website CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Volunteer page CSS -->
+    <link rel="stylesheet" href="volunteer.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+
+        <a class="brand" href="index.html">
+
+            <span class="brand-mark">
+                <i></i>
+                <b></b>
+                <em></em>
+            </span>
+
+            <span class="brand-copy">
+                <strong>Kv Foundation</strong>
+                <small>Together for a Better Tomorrow</small>
+            </span>
+
+        </a>
+
+        <button class="menu-toggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="main-nav">
+
+            <a href="index.html">Home</a>
+
+            <a href="index.html#about">
+                About Us <span>⌄</span>
+            </a>
+
+            <a href="index.html#focus">
+                Our Work <span>⌄</span>
+            </a>
+
+            <a class="active" href="volunteer.html">
+                Get Involved <span>⌄</span>
+            </a>
+
+            <a href="index.html#impact">Impact</a>
+
+            <a href="index.html#gallery">Gallery</a>
+
+            <a href="index.html#contact">Contact</a>
+
+        </nav>
+
+        <a class="donate top-donate" href="index.html#involved">
+            <span>♥</span> Donate Now
+        </a>
+
+    </header>
+
+
+    <!-- VOLUNTEER BANNER -->
+    <main class="volunteer-page">
+
+        <section class="volunteer-hero">
+
+            <div>
+
+                <p class="volunteer-eyebrow">
+                    GET INVOLVED · MAKE A DIFFERENCE
+                </p>
+
+                <h1>Be a Part of Our Journey</h1>
+
+                <p>
+                    Together, we can build a kinder, more inclusive world.
+                    Register your interest and our team will get in touch.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- REGISTRATION SECTION -->
+        <section class="volunteer-content">
+
+            <div class="volunteer-intro">
+
+                <span class="section-kicker">
+                    VOLUNTEER WITH US <i></i>
+                </span>
+
+                <h2>Let's make a difference together.</h2>
+
+                <p>
+                    Share a few basic details so we can contact you
+                    about volunteering opportunities.
+                </p>
+
+            </div>
+
+
+            <!-- VOLUNTEER FORM -->
+            <form class="volunteer-card" id="volunteer-form">
+
+                <div class="form-grid">
+
+                    <!-- FIRST NAME -->
+                    <label>
+                        First Name <span>*</span>
+
+                        <input type="text"
+                               name="firstName"
+                               placeholder="Enter your first name"
+                               autocomplete="given-name"
+                               maxlength="60"
+                               required>
+                    </label>
+
+
+                    <!-- LAST NAME -->
+                    <label>
+                        Last Name <span>*</span>
+
+                        <input type="text"
+                               name="lastName"
+                               placeholder="Enter your last name"
+                               autocomplete="family-name"
+                               maxlength="60"
+                               required>
+                    </label>
+
+
+                    <!-- EMAIL -->
+                    <label>
+                        Email Address <span>*</span>
+
+                        <input type="email"
+                               name="email"
+                               placeholder="name@example.com"
+                               autocomplete="email"
+                               maxlength="254"
+                               required>
+                    </label>
+
+
+                    <!-- PHONE -->
+                    <label>
+                        Phone Number <span>*</span>
+
+                        <input type="tel"
+                               name="phone"
+                               placeholder="Enter your phone number"
+                               autocomplete="tel"
+                               minlength="7"
+                               maxlength="20"
+                               pattern="[0-9+() .-]{7,20}"
+                               required>
+                    </label>
+
+
+                    <!-- CITY -->
+                    <label>
+                        City <span>*</span>
+
+                        <input type="text"
+                               name="city"
+                               placeholder="Enter your city"
+                               autocomplete="address-level2"
+                               maxlength="80"
+                               required>
+                    </label>
+
+
+                    <!-- STATE -->
+                    <label>
+                        State <span>*</span>
+
+                        <input type="text"
+                               name="state"
+                               placeholder="Enter your state"
+                               autocomplete="address-level1"
+                               maxlength="80"
+                               required>
+                    </label>
+
+                </div>
+
+
+                <p class="form-note">
+                    <span>*</span> Required fields
+                </p>
+
+
+                <button type="submit"
+                        class="button button-lime submit-button"
+                        id="submit-button">
+
+                    Submit Registration <b>→</b>
+
+                </button>
+
+
+                <!-- SUCCESS / ERROR MESSAGE -->
+                <p class="form-message"
+                   id="form-message"
+                   role="status"
+                   aria-live="polite">
+                </p>
+
+            </form>
+
+        </section>
+
+
+        <p class="back-link">
+            <a href="index.html">
+                ← Back to Kv Foundation home
+            </a>
+        </p>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer volunteer-footer">
+
+        <a class="brand footer-brand" href="index.html">
+
+            <span class="brand-mark">
+                <i></i>
+                <b></b>
+                <em></em>
+            </span>
+
+            <span class="brand-copy">
+                <strong>Kv Foundation</strong>
+                <small>Together for a Better Tomorrow</small>
+            </span>
+
+        </a>
+
+        <small class="copyright">
+            © 2026 Kv Foundation. All rights reserved.
+        </small>
+
+    </footer>
+
+
+    <!-- Existing navigation JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Volunteer form JavaScript -->
+    <script src="volunteer.js"></script>
+
+</body>
+</html>

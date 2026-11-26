@@ -1,0 +1,299 @@
+
+/* =====================================
+   VOLUNTEER PAGE
+===================================== */
+
+.volunteer-page {
+    min-height: calc(100vh - 166px);
+    background: #fbfcf7;
+    padding-bottom: 48px;
+}
+
+
+/* =====================================
+   VOLUNTEER HERO BANNER
+===================================== */
+
+.volunteer-hero {
+    min-height: 220px;
+    padding: 48px 7%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(4, 52, 9, 0.94),
+            rgba(17, 91, 12, 0.75)
+        ),
+        url("assets/hero-photo.jpg") center 42% / cover;
+}
+
+.volunteer-hero > div {
+    max-width: 720px;
+}
+
+.volunteer-eyebrow {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.6px;
+    color: #a6e34b;
+    margin: 0 0 12px;
+}
+
+.volunteer-hero h1 {
+    font-size: clamp(32px, 4vw, 46px);
+    line-height: 1.1;
+    margin: 0 0 12px;
+    letter-spacing: -1px;
+}
+
+.volunteer-hero p:last-child {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 650px;
+}
+
+
+/* =====================================
+   MAIN CONTENT
+===================================== */
+
+.volunteer-content {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 38px 24px 0;
+
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 42px;
+    align-items: start;
+}
+
+.volunteer-intro {
+    padding-top: 12px;
+}
+
+.volunteer-intro h2 {
+    font-size: 29px;
+    line-height: 1.2;
+    color: #171e43;
+    margin: 14px 0 10px;
+}
+
+.volunteer-intro p {
+    font-size: 15px;
+    line-height: 1.65;
+    color: #555d6d;
+    margin: 0;
+    max-width: 340px;
+}
+
+
+/* =====================================
+   FORM CONTAINER
+===================================== */
+
+.volunteer-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 14px;
+    border: 1px solid #e7eddf;
+    box-shadow: 0 12px 34px #172b0d10;
+}
+
+
+/* =====================================
+   FORM GRID
+===================================== */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 17px;
+}
+
+.form-grid label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #202744;
+}
+
+.form-grid label span,
+.form-note span {
+    color: #e36b00;
+}
+
+
+/* =====================================
+   INPUT FIELDS
+===================================== */
+
+.form-grid input {
+    width: 100%;
+    height: 47px;
+
+    border: 1px solid #d8dece;
+    border-radius: 8px;
+
+    padding: 0 12px;
+
+    font: 400 14px "DM Sans", Arial, sans-serif;
+    color: #171e43;
+
+    outline: none;
+    background: #fff;
+
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.form-grid input:focus {
+    border-color: #278b0a;
+    box-shadow: 0 0 0 3px #278b0a18;
+}
+
+.form-grid input::placeholder {
+    color: #9a9eaa;
+}
+
+
+/* =====================================
+   REQUIRED FIELD NOTE
+===================================== */
+
+.form-note {
+    font-size: 12px;
+    color: #74798a;
+    margin: 17px 0;
+}
+
+
+/* =====================================
+   SUBMIT BUTTON
+===================================== */
+
+.submit-button {
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 15px;
+    padding: 13px 22px;
+    transition: 0.2s;
+}
+
+.submit-button:hover {
+    transform: translateY(-2px);
+}
+
+.submit-button:disabled {
+    opacity: 0.65;
+    cursor: wait;
+}
+
+
+/* =====================================
+   SUCCESS / ERROR MESSAGE
+===================================== */
+
+.form-message {
+    min-height: 22px;
+    margin: 14px 0 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #238800;
+}
+
+.form-message.error {
+    color: #bd3025;
+}
+
+
+/* =====================================
+   BACK TO HOME
+===================================== */
+
+.back-link {
+    text-align: center;
+    margin: 25px 0 0;
+    font-size: 14px;
+}
+
+.back-link a {
+    color: #278b0a;
+    font-weight: 700;
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+.volunteer-footer {
+    min-height: 86px;
+}
+
+
+/* =====================================
+   TABLET RESPONSIVE
+===================================== */
+
+@media (max-width: 800px) {
+
+    .volunteer-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 650px;
+    }
+
+    .volunteer-intro {
+        padding-top: 0;
+    }
+
+    .volunteer-intro h2 {
+        font-size: 25px;
+    }
+
+    .volunteer-hero {
+        min-height: 190px;
+        padding: 38px 7%;
+    }
+}
+
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+@media (max-width: 600px) {
+
+    .volunteer-content {
+        padding: 28px 16px 0;
+    }
+
+    .volunteer-card {
+        padding: 22px 17px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .volunteer-hero h1 {
+        font-size: 32px;
+    }
+
+    .volunteer-footer {
+        gap: 12px;
+    }
+
+    .volunteer-footer .copyright {
+        text-align: center;
+    }
+}
